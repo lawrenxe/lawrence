@@ -1,4 +1,5 @@
 import React from "react";
+import unimelb from "../assets/unimelb.png";
 
 interface EIProps {
   school: string;
@@ -18,7 +19,7 @@ const EducationItem = ({
   subjects,
 }: EIProps) => {
   return (
-    <div className="flex flex-col w-full gap-5 mb-10">
+    <div className="flex flex-col w-full gap-5 mb-6 bg-white border border-black border-2 p-5 shadow-solid-4">
       <div className="flex flex-col">
         <div className="w-full flex flex-row items-end justify-between">
           <h1 className="text-2xl font-sans font-bold ">{school}</h1>
@@ -44,6 +45,11 @@ const EducationItem = ({
           </p>
         </div>
       </div>
+      <img
+        className="-mt-36 w-36 opacity-30 self-end"
+        src={unimelb}
+        alt="Unimelb Logo"
+      />
     </div>
   );
 };

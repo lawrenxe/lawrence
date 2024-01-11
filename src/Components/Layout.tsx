@@ -44,7 +44,7 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
           <section className="w-[30%]">
             <NavBar selected={selected} setSelected={setSelected} />
           </section>
-          <section className="w-[70%] min-h-fit overflow-y-scroll no-scrollbar relative mt-10">
+          <section className="w-[70%] min-h-fit overflow-y-scroll no-scrollbar relative ">
             {children}
           </section>
         </section>
