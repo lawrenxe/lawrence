@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import SkillTag from "./SkillTag";
 import Project, { ProjectType } from "../static/Project";
+import Transition from "./Transition";
 
 interface PCProps {
   project: ProjectType;
 }
 
 const ProjectCard = ({ project }: PCProps) => {
+  const [loaded, setLoaded] = useState(false);
+  const handleLoad = () => {
+    setLoaded(true);
+  };
+  useEffect(() => {
+    handleLoad();
+  }, []);
+  const gridColumn = project.imgUrls.length;
+
   return (
     <div className="flex flex-col gap-y-8 w-full h-full overflow-y-auto">
-      <div className="flex flex-col gap-y-2">
+      <div className="flex flex-col gap-y-2 w-full">
         <div className="flex flex-row items-center gap-x-3">
           <h1 className="text-3xl font-bold">{project.name}</h1>
+
           {project.url && (
             <a href={project.url} target="_blank">
               <FaExternalLinkAlt size={15} className="hover:cursor-pointer" />
@@ -25,8 +36,9 @@ const ProjectCard = ({ project }: PCProps) => {
             </a>
           )}
         </div>
+
         <div>
-          {project.skills.map((skill) => {
+          {project.skills.map((skill, index) => {
             return <SkillTag key={skill}>{skill}</SkillTag>;
           })}
         </div>
@@ -40,12 +52,13 @@ const ProjectCard = ({ project }: PCProps) => {
         ></iframe>
       )}
       {!project.youtubeUrl && project.imgUrls && (
-        <div className={`grid gap-2 grid-cols-${project.imgUrls.length} w-3/4`}>
+        <div className={` gap-2 grid grid-cols-${gridColumn} w-3/4`}>
           {project.imgUrls.map((imgUrl, index) => {
-            return <img className="w-full" key={index} src={imgUrl} />;
+            return <img className="w-" key={index} src={imgUrl} />;
           })}
         </div>
       )}
+
       {project.description}
     </div>
   );

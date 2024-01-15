@@ -13,6 +13,7 @@ import PopupWindow from "./Components/PopupWindow";
 import ATRequest from "./Components/ATRequest";
 import LeaveAMessage from "./Components/LeaveAMessage";
 import projects, { ProjectType } from "./static/Project";
+import Transition from "./Components/Transition";
 
 export type Message = {
   name: string;

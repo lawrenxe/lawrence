@@ -9,15 +9,15 @@ interface TProps {
 
 const Transition = ({ time, delay, children, loaded }: TProps) => {
   return (
-    <div className="w-full">
+    <div className="w-full h-full">
       <div
-        className={`${loaded ? "opacity-100" : "opacity-0"}`}
+        className={`h-full ${loaded ? "opacity-100" : "opacity-0"}`}
         style={{
           transitionDelay: `${delay}ms`,
           transitionDuration: `${time}ms`,
         }}
       >
-        <div className="h-fit flex flex-col">{children}</div>
+        <div className="h-full flex flex-col">{children}</div>
       </div>
     </div>
   );

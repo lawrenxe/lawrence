@@ -12,6 +12,16 @@ interface CFProps {
 }
 
 const ContactForm = ({ setMessage, setContact }: CFProps) => {
+  const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID
+    ? process.env.REACT_APP_EMAILJS_SERVICE_ID
+    : "";
+  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+    ? process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+    : "";
+  const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    ? process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    : "";
+  console.log(serviceId);
   const { register, handleSubmit } = useForm<Message>();
   const [isLoading, setLoading] = useState<boolean>(false);
 
@@ -19,12 +29,7 @@ const ContactForm = ({ setMessage, setContact }: CFProps) => {
     e?.preventDefault();
     setLoading(true);
     emailjs
-      .sendForm(
-        "getLawrence",
-        "template_txjy3kh",
-        e?.target,
-        "mY7WDzV0-1XYf3c80"
-      )
+      .sendForm(serviceId, templateId, e?.target, publicKey)
       .then(() => {
         setLoading(false);
         console.log("email sent successfully");
