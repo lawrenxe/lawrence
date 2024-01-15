@@ -1,47 +1,39 @@
 import React from "react";
 import unimelb from "../assets/unimelb.png";
+import { EducationType } from "../static/Education";
 
 interface EIProps {
-  school: string;
-  period: string;
-  course: string;
-  gpa: string;
-  achieve?: string;
-  subjects: string;
+  education: EducationType;
 }
 
-const EducationItem = ({
-  school,
-  period,
-  course,
-  gpa,
-  achieve,
-  subjects,
-}: EIProps) => {
+const EducationItem = ({ education }: EIProps) => {
   return (
     <div className="flex flex-col w-full gap-5 mb-6 bg-white border border-black border-2 p-5 shadow-solid-4">
       <div className="flex flex-col">
         <div className="w-full flex flex-row items-end justify-between">
-          <h1 className="text-2xl font-sans font-bold ">{school}</h1>
-          <h2 className="text-xl font-sans font-bold">{period}</h2>
+          <h1 className="text-2xl font-sans font-bold ">{education.school}</h1>
+          <h2 className="text-xl font-sans font-bold">{education.period}</h2>
         </div>
 
-        <h2 className="text-xl font-sans font-medium italic">{course}</h2>
+        <h2 className="text-xl font-sans font-medium italic">
+          {education.course}
+        </h2>
       </div>
 
       <div className="flex flex-col px-5 gap-2 text-lg">
         <p className="font-medium">
           <span className="font-bold">GPA obtained: </span>
-          {gpa}
+          {education.gpa}
         </p>
-        {achieve && (
+        {education.achieve && (
           <p className="font-medium">
-            <span className="font-bold">Achievement:</span> {achieve}
+            <span className="font-bold">Achievement:</span> {education.achieve}
           </p>
         )}
         <div>
           <p className="font-medium">
-            <span className="font-bold">Subjects accomplished:</span> {subjects}
+            <span className="font-bold">Subjects accomplished:</span>{" "}
+            {education.subjects}
           </p>
         </div>
       </div>
