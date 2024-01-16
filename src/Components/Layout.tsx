@@ -56,7 +56,12 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
           </section>
           <section className="py-5 lg:py-8 xl:py-12 px-2 w-full h-full min-h-fit overflow-y-scroll no-scrollbar relative flex ">
             {isHamburgerClicked ? (
-              <NavBar selected={selected} setSelected={setSelected} />
+              <div>
+                <div className="lg:hidden">
+                  <NavBar selected={selected} setSelected={setSelected} />
+                </div>
+                <div className="hidden lg:block">{children}</div>
+              </div>
             ) : (
               children
             )}
