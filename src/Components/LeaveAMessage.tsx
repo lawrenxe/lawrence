@@ -18,7 +18,7 @@ const LeaveAMessage = ({ setMessage, setContact }: LAMProp) => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-y-12 w-full h-full">
+    <div className="flex flex-col gap-y-12 w-full h-full lg:px-8">
       <div className="flex flex-col gap-y-2">
         <Transition time={1000} delay={0} loaded={loaded}>
           <h1 className="text-xl lg:text-2xl xl:text-3xl font-bold">
