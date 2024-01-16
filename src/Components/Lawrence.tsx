@@ -13,8 +13,8 @@ const Lawrence = () => {
   }, []);
 
   return (
-    <div className="flex flex-col w-full h-full ">
-      <div className="flex flex-col gap-4  w-full ">
+    <div className="flex flex-col w-full h-full">
+      <div className="flex flex-col gap-4  w-full">
         <Transition time={1000} delay={0} loaded={loaded}>
           <Bubble className="">Hello, My name is Lawrence Yizhou Wang.</Bubble>
         </Transition>

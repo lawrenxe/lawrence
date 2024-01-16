@@ -72,7 +72,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
         <Transition time={1000} delay={500} loaded={loaded}>
           <div className="flex flex-col hover:cursor-pointer">
             <a href="https://github.com/lawrenxe" target="_blank">
-              <div className="font-bold flex flex-row items-center gap-2">
+              <div className="font-medium flex flex-row items-center gap-2">
                 <FaGithub />
                 @lawrenxe
               </div>
@@ -82,7 +82,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
         <Transition time={1000} delay={600} loaded={loaded}>
           <div className="flex flex-col hover:cursor-pointer">
             <a href="https://leetcode.com/lawrenxe/" target="_blank">
-              <div className="font-bold flex flex-row items-center gap-2">
+              <div className="font-medium flex flex-row items-center gap-2">
                 <SiLeetcode />
                 @lawrenX3
               </div>
@@ -95,7 +95,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
               href="https://www.linkedin.com/in/yizhou-lawrence-wang/"
               target="_blank"
             >
-              <div className="font-bold flex flex-row items-center gap-2">
+              <div className="font-medium flex flex-row items-center gap-2">
                 <FaLinkedin />
                 Yizhou Lawrence Wang
               </div>
@@ -105,7 +105,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
         <Transition time={1000} delay={800} loaded={loaded}>
           <div className="flex flex-col hover:cursor-pointer">
             <a href="mailto: jobs.yizhou@gmail.com" target="_blank">
-              <div className="font-bold flex flex-row items-center gap-2">
+              <div className="font-medium flex flex-row items-center gap-2">
                 <MdEmail />
                 jobs.yizhou@gmail.com
               </div>
