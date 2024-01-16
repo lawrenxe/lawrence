@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac776588.css",
-    "main.js": "/static/js/main.0d02723a.js",
+    "main.css": "/static/css/main.66987e94.css",
+    "main.js": "/static/js/main.3170a923.js",
     "static/js/787.808227d7.chunk.js": "/static/js/787.808227d7.chunk.js",
     "static/media/music1.png": "/static/media/music1.8b3ee24c4d180d17bdb5.png",
     "static/media/web3.png": "/static/media/web3.825c7a5efa3aa4d2861a.png",
@@ -11,17 +11,17 @@
     "static/media/YouTube1.PNG": "/static/media/YouTube1.78f1553e04860d1f21a8.PNG",
     "static/media/YouTube3.PNG": "/static/media/YouTube3.e7c1e44797efb17593d8.PNG",
     "static/media/YouTube4.PNG": "/static/media/YouTube4.e5aedcdb209bb4a5dc3e.PNG",
-    "static/media/Potrait.png": "/static/media/Potrait.ae90e26e7b25a8250405.png",
+    "static/media/Potrait.png": "/static/media/Potrait.fda0331d0d9635b61aaf.png",
     "static/media/standup2.PNG": "/static/media/standup2.36ecb675ab6f2fe1e993.PNG",
     "static/media/standup1.PNG": "/static/media/standup1.d2623c7ce8433209b405.PNG",
     "static/media/covid1.png": "/static/media/covid1.3235d1bfa124d78695d7.png",
     "index.html": "/index.html",
-    "main.ac776588.css.map": "/static/css/main.ac776588.css.map",
-    "main.0d02723a.js.map": "/static/js/main.0d02723a.js.map",
+    "main.66987e94.css.map": "/static/css/main.66987e94.css.map",
+    "main.3170a923.js.map": "/static/js/main.3170a923.js.map",
     "787.808227d7.chunk.js.map": "/static/js/787.808227d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac776588.css",
-    "static/js/main.0d02723a.js"
+    "static/css/main.66987e94.css",
+    "static/js/main.3170a923.js"
   ]
 }
