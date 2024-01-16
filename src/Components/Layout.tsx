@@ -30,16 +30,16 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
     >
       <div
         className={
-          "bg-white w-screen h-screen flex flex-col p-10 items-center max-w-[1536px] max-h-[1000px]  2xl:border-4 2xl:shadow-solid-8 2xl:border-black relative"
+          "bg-white w-screen h-screen flex flex-col p-10 items-center max-w-[1280px] max-h-[960px]  xl:border-4 xl:shadow-solid-8 xl:border-black relative"
         }
       >
-        <section className="h-10 font-mono font-bold text-xl flex flex-row gap-4 w-full justify-between items-center">
+        <section className="h-10 font-mono font-black text-xl flex flex-row gap-4 w-full justify-between items-center">
           <p className="">
             {titleMap[selected as keyof typeof titleMap]}
             {" {"}
           </p>
           <section
-            className="xl:hidden hover:pointer-cursor"
+            className="lg:hidden hover:cursor-pointer"
             onClick={() => {
               setHamburgerClicked(!isHamburgerClicked);
             }}
@@ -48,13 +48,13 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
           </section>
         </section>
 
-        <section className="flex w-full min-h-fit flex-row flex-1 overflow-x-auto">
+        <section className="flex w-full min-h-fit flex-row flex-1 overflow-x-auto no-scrollbar">
           <section className="w-fit">
-            <section className="hidden xl:block h-full px-10">
+            <section className="hidden lg:block h-full px-10">
               <NavBar selected={selected} setSelected={setSelected} />
             </section>
           </section>
-          <section className="py-5 px-2 min-h-fit overflow-y-scroll no-scrollbar relative ">
+          <section className="py-5 px-2 w-full h-full min-h-fit overflow-y-scroll no-scrollbar relative flex ">
             {isHamburgerClicked ? (
               <NavBar selected={selected} setSelected={setSelected} />
             ) : (

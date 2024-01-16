@@ -38,7 +38,7 @@ const EducationItem = ({ education }: EIProps) => {
         </div>
       </div>
       <img
-        className="-mt-36 w-36 opacity-30 self-end"
+        className="-mt-24 w-24 opacity-30 self-end"
         src={unimelb}
         alt="Unimelb Logo"
       />

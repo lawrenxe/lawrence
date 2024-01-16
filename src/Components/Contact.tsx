@@ -23,7 +23,7 @@ const Contact = ({ setContact, message }: CProps) => {
   }, []);
 
   return (
-    <div className="flex flex-col relative h-full">
+    <div className="flex flex-col relative h-full w-full items-center">
       <div className="flex flex-col gap-y-4 w-full h-fit overflow-y-auto">
         <Transition time={1000} delay={0} loaded={loaded}>
           <Bubble>You can click the following options to contact me:</Bubble>
