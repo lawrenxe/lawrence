@@ -21,7 +21,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
 
   return (
     <div className="flex flex-col justify-between h-full py-10">
-      <div className="flex flex-col gap-y-2">
+      <div className="flex flex-col gap-y-2 lg:gap-y-4">
         <Transition time={1000} delay={0} loaded={loaded}>
           <NavBarItem
             navString={"lawrence"}

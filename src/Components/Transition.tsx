@@ -9,7 +9,7 @@ interface TProps {
 
 const Transition = ({ time, delay, children, loaded }: TProps) => {
   return (
-    <div className="w-full">
+    <div className="w-full h-full">
       <div
         className={`h-full ${loaded ? "opacity-100" : "opacity-0"}`}
         style={{

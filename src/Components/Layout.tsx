@@ -33,7 +33,7 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
           "bg-white w-screen h-screen flex flex-col p-10 items-center max-w-[1280px] max-h-[960px]  xl:border-4 xl:shadow-solid-8 xl:border-black relative"
         }
       >
-        <section className="h-10 font-mono font-black text-xl flex flex-row gap-4 w-full justify-between items-center">
+        <section className="h-10 font-mono font-black text-xl xl:text-3xl lg:text-2xl flex flex-row gap-4 w-full justify-between items-center">
           <p className="">
             {titleMap[selected as keyof typeof titleMap]}
             {" {"}
@@ -54,7 +54,7 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
               <NavBar selected={selected} setSelected={setSelected} />
             </section>
           </section>
-          <section className="py-5 px-2 w-full h-full min-h-fit overflow-y-scroll no-scrollbar relative flex ">
+          <section className="py-5 lg:py-8 xl:py-12 px-2 w-full h-full min-h-fit overflow-y-scroll no-scrollbar relative flex ">
             {isHamburgerClicked ? (
               <NavBar selected={selected} setSelected={setSelected} />
             ) : (
@@ -62,7 +62,7 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
             )}
           </section>
         </section>
-        <section className="h-10 font-mono font-bold text-xl w-full flex items-center">
+        <section className="h-10 font-mono font-bold md:text-2xl lg:text-3xl text-xl w-full flex items-center">
           {" }"}
         </section>
       </div>

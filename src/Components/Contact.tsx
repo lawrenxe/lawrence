@@ -86,13 +86,16 @@ const Contact = ({ setContact, message }: CProps) => {
         {message && (
           <div className="flex flex-col gap-y-4">
             <div className="w-full flex-col flex self-end">
-              <p className="self-end font-medium ml-4">{message.name}</p>
-              <Bubble className="self-end ml-16">{message.message}</Bubble>
+              <Transition time={1000} delay={900} loaded={loaded}>
+                <p className="self-end font-medium ml-4">{message.name}</p>
+                <Bubble className="self-end ml-16">{message.message}</Bubble>
+              </Transition>
             </div>
-
-            <Bubble className="self-start mr-16">
-              I have received your message, and will reply to you ASAP.
-            </Bubble>
+            <Transition time={1000} delay={1050} loaded={loaded}>
+              <Bubble className="self-start mr-16">
+                I have received your message, and will reply to you ASAP.
+              </Bubble>
+            </Transition>
           </div>
         )}
       </div>

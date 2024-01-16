@@ -33,7 +33,7 @@ const Education = ({ setATRequest }: EProps) => {
 
       <Transition key={"button"} time={1000} delay={300} loaded={loaded}>
         <div
-          className="bg-white w-fit  border-black border-2 px-2 py-1 font-bold hover:cursor-pointer hover:shadow-solid-4 text-sm"
+          className="bg-white w-fit  border-black border-2 px-2 py-1 font-bold hover:cursor-pointer hover:shadow-solid-4 text-sm lg:text-md xl:text-lg"
           onClick={() => {
             setATRequest(true);
           }}

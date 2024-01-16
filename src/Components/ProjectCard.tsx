@@ -23,7 +23,9 @@ const ProjectCard = ({ project }: PCProps) => {
     <div className="flex flex-col gap-y-8 w-full h-full overflow-y-auto no-scrollbar">
       <div className="flex flex-col gap-y-1 w-full">
         <div className="flex flex-row items-center gap-x-3">
-          <h1 className="text-xl font-bold">{project.name}</h1>
+          <h1 className="text-xl lg:text-2xl xl:text-3xl font-bold">
+            {project.name}
+          </h1>
 
           {project.url && (
             <a href={project.url} target="_blank">

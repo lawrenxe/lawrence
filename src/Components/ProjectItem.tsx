@@ -19,7 +19,7 @@ const ProjectItem = ({ setProjectSelected, project }: PIProps) => {
         src={project.titleImgUrl ? project.titleImgUrl : project.imgUrls[0]}
         className="w-full aspect-[4/3] bg-yellow-300 mb-4 object-cover"
       />
-      <div className="font-bold text-md">{project.name}</div>
+      <div className="font-bold text-md lg:text-lg ">{project.name}</div>
 
       <div className="w-full">
         {project.skills.map((skill) => {
