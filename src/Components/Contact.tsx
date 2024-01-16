@@ -46,7 +46,7 @@ const Contact = ({ setContact, message }: CProps) => {
           >
             <div className="font-bold flex flex-row items-center gap-2">
               <FaLinkedin />
-              https://linkedin.com/in/yizhou-lawrence-wang/
+              @yizhou-lawrence-wang
             </div>
           </Bubble>
         </Transition>

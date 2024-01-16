@@ -21,10 +21,10 @@ const LeaveAMessage = ({ setMessage, setContact }: LAMProp) => {
     <div className="flex flex-col gap-y-12 w-full h-full">
       <div className="flex flex-col gap-y-2">
         <Transition time={1000} delay={0} loaded={loaded}>
-          <h1 className="text-3xl font-bold">Leave a Message</h1>
+          <h1 className="text-xl font-bold">Leave a Message</h1>
         </Transition>
         <Transition time={1000} delay={150} loaded={loaded}>
-          <h2 className="text-xl font-medium">
+          <h2 className="text-sm font-medium">
             I will get back to you as soon as possible.
           </h2>
         </Transition>

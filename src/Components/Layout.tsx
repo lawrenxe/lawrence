@@ -1,5 +1,6 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import NavBar from "./NavBar";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 interface LProps {
   children: ReactNode;
@@ -8,47 +9,60 @@ interface LProps {
 }
 
 const Layout = ({ children, setSelected, selected }: LProps) => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
-  const [isOverThreshold, setIsOverThreshold] = useState(
-    screenWidth > 1500 || screenHeight > 1000
-  );
-
+  const [isHamburgerClicked, setHamburgerClicked] = useState<boolean>(false);
   useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-      setScreenHeight(window.innerHeight);
-      setIsOverThreshold(screenWidth > 1500 || screenHeight > 1000);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [screenWidth, screenHeight]);
+    setHamburgerClicked(false);
+  }, [selected]);
+
+  const titleMap = {
+    lawrence: "Class Lawrence",
+    projects: "getProjects()",
+    experience: "getExperiences()",
+    education: "getEducations()",
+    contact: "void contact()",
+  };
 
   return (
     <div
-      className={`${
-        isOverThreshold ? "bg-neutral-200" : ""
-      } w-screen h-screen flex justify-center items-center`}
+      className={
+        "bg-neutral-200 w-screen h-screen flex justify-center items-center"
+      }
     >
       <div
-        className={`bg-white w-screen h-screen flex flex-col p-20 items-center max-w-[1500px] max-h-[1000px] ${
-          isOverThreshold ? "border border-4 shadow-solid-8 border-black" : ""
-        }`}
+        className={
+          "bg-white w-screen h-screen flex flex-col p-10 items-center max-w-[1536px] max-h-[1000px]  2xl:border-4 2xl:shadow-solid-8 2xl:border-black relative"
+        }
       >
-        <section className="h-20 font-mono font-bold text-3xl flex flex-row gap-4 w-full">
-          <p className="">class Lawrence {"{"}</p>
-        </section>
-        <section className="flex w-full min-h-fit flex-row flex-1 px-10 overflow-x-auto">
-          <section className="w-[30%]">
-            <NavBar selected={selected} setSelected={setSelected} />
+        <section className="h-10 font-mono font-bold text-xl flex flex-row gap-4 w-full justify-between items-center">
+          <p className="">
+            {titleMap[selected as keyof typeof titleMap]}
+            {" {"}
+          </p>
+          <section
+            className="xl:hidden hover:pointer-cursor"
+            onClick={() => {
+              setHamburgerClicked(!isHamburgerClicked);
+            }}
+          >
+            <GiHamburgerMenu size="1em" />
           </section>
-          <section className="w-[70%] min-h-fit overflow-y-scroll no-scrollbar relative ">
-            {children}
+        </section>
+
+        <section className="flex w-full min-h-fit flex-row flex-1 overflow-x-auto">
+          <section className="w-fit">
+            <section className="hidden xl:block h-full px-10">
+              <NavBar selected={selected} setSelected={setSelected} />
+            </section>
+          </section>
+          <section className="py-5 px-2 min-h-fit overflow-y-scroll no-scrollbar relative ">
+            {isHamburgerClicked ? (
+              <NavBar selected={selected} setSelected={setSelected} />
+            ) : (
+              children
+            )}
           </section>
         </section>
-        <section className="h-20 font-mono font-bold text-3xl w-full">
+        <section className="h-10 font-mono font-bold text-xl w-full flex items-center">
           {" }"}
         </section>
       </div>

@@ -6,7 +6,7 @@ interface STProps {
 
 const SkillTag = ({ children }: STProps) => {
   return (
-    <span className="bg-gray-200 w-fit px-2 py-1 rounded-md text-xs font-medium inline-block m-1">
+    <span className="bg-gray-200 w-fit px-1 rounded-md text-[10px] font-medium inline-block mx-1">
       {children}
     </span>
   );

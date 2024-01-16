@@ -18,14 +18,13 @@ const NavBarItem = ({
       onClick={() => {
         setSelected(navString);
       }}
-      className={`hover:cursor-pointer font-mono font-bold text-2xl ${
+      className={`hover:cursor-pointer font-mono font-bold text-lg ${
         selected === navString
-          ? "underline underline-offset-4 decoration-4"
+          ? "underline underline-offset-4 decoration-2"
           : ""
       } `}
     >
       {children}
-      {}
     </div>
   );
 };

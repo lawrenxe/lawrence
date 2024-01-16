@@ -20,10 +20,10 @@ const ProjectCard = ({ project }: PCProps) => {
   const gridColumn = project.imgUrls.length;
 
   return (
-    <div className="flex flex-col gap-y-8 w-full h-full overflow-y-auto">
-      <div className="flex flex-col gap-y-2 w-full">
+    <div className="flex flex-col gap-y-8 w-full h-full overflow-y-auto no-scrollbar">
+      <div className="flex flex-col gap-y-1 w-full">
         <div className="flex flex-row items-center gap-x-3">
-          <h1 className="text-3xl font-bold">{project.name}</h1>
+          <h1 className="text-xl font-bold">{project.name}</h1>
 
           {project.url && (
             <a href={project.url} target="_blank">
@@ -45,21 +45,21 @@ const ProjectCard = ({ project }: PCProps) => {
       </div>
       {project.youtubeUrl && (
         <iframe
-          className="w-3/4 aspect-[16/9]"
+          className="aspect-[16/9]"
           src={project.youtubeUrl}
           title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         ></iframe>
       )}
       {!project.youtubeUrl && project.imgUrls && (
-        <div className={` gap-2 grid grid-cols-${gridColumn} w-3/4`}>
+        <div className={`gap-2 grid grid-cols-${gridColumn}`}>
           {project.imgUrls.map((imgUrl, index) => {
             return <img className="w-" key={index} src={imgUrl} />;
           })}
         </div>
       )}
 
-      {project.description}
+      <div className="text">{project.description}</div>
     </div>
   );
 };

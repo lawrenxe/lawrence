@@ -19,7 +19,9 @@ const Projects = ({ setProjectSelected }: PProps) => {
 
   return (
     <div className="w-full h-full relative">
-      <div className={`grid grid-cols-3 gap-4 w-full h-full`}>
+      <div
+        className={`grid grid-cols-1 gap-4 w-full h-full sm:grid-cols-2 lg:grid-cols-3`}
+      >
         {projects.map((project, index) => {
           return (
             <Transition
@@ -35,39 +37,6 @@ const Projects = ({ setProjectSelected }: PProps) => {
             </Transition>
           );
         })}
-
-        {/* <ProjectItem
-          setProjectSelected={setProjectSelected}
-          projectId="youtube"
-        />
-        <ProjectItem
-          setProjectSelected={setProjectSelected}
-          projectId="youtube"
-        />
-        <ProjectItem
-          setProjectSelected={setProjectSelected}
-          projectId="youtube"
-        />
-        <ProjectItem
-          setProjectSelected={setProjectSelected}
-          projectId="youtube"
-        />
-        <ProjectItem
-          setProjectSelected={setProjectSelected}
-          projectId="youtube"
-        />
-        <ProjectItem
-          setProjectSelected={setProjectSelected}
-          projectId="youtube"
-        />
-        <ProjectItem
-          setProjectSelected={setProjectSelected}
-          projectId="youtube"
-        />
-        <ProjectItem
-          setProjectSelected={setProjectSelected}
-          projectId="youtube"
-        /> */}
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ interface BProps {
 const Bubble = ({ children, className, link, onClick }: BProps) => {
   return (
     <a
-      className={` border border-black border-2 w-fit text-xl px-4 py-2 font-medium ${className}`}
+      className={`  border-black border-2 w-fit text-sm px-2 py-1 font-medium ${className}`}
       href={link}
       target="_blank"
       onClick={onClick}

@@ -8,29 +8,29 @@ interface EIProps {
 
 const ExperienceItem = ({ experience }: EIProps) => {
   return (
-    <div className="flex flex-col w-full gap-5 mb-6 bg-white border p-5 border-black border-2 shadow-solid-4">
-      <div className="flex flex-col">
-        <div className="w-full flex flex-row items-end justify-between">
-          <h1 className="text-2xl font-sans font-bold ">
+    <div className="flex flex-col w-full gap-2 mb-4 bg-white p-3 border-black border-2 shadow-solid-4">
+      <div className="flex flex-col w-full">
+        <div className="w-full md:flex md:flex-row items-end justify-between">
+          <h1 className="text-md font-sans font-bold">
             {experience.workplace}
           </h1>
-          <h2 className="text-xl font-sans font-bold">{experience.location}</h2>
+          <h2 className="text-md font-sans font-bold">{experience.location}</h2>
         </div>
-        <div className="w-full flex flex-row items-end justify-between">
-          <h2 className="text-xl font-sans font-medium italic">
+        <div className="w-full md:flex md:flex-row items-end justify-between">
+          <h2 className="text-sm font-sans font-medium italic">
             {experience.title}
           </h2>
-          <h2 className="text-lg font-sans font-medium italic">
+          <h2 className="text-sm font-sans font-medium italic">
             {experience.period}
           </h2>
         </div>
       </div>
 
-      <div className="flex flex-col px-5 gap-2 text-lg">
+      <div className="flex flex-col text-xs">
         <p className="font-medium">
           {experience.workItems.map((item) => {
             return (
-              <div className="flex flex-row gap-3">
+              <div className="flex flex-row gap-1">
                 {" "}
                 <p className="w-fit">·</p> <p>{item}</p>{" "}
               </div>
@@ -39,7 +39,7 @@ const ExperienceItem = ({ experience }: EIProps) => {
         </p>
       </div>
 
-      <div className="ml-5">
+      <div className="">
         {experience.skills.map((skill) => {
           return <SkillTag>{skill}</SkillTag>;
         })}

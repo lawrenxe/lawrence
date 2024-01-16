@@ -12,14 +12,14 @@ const ProjectItem = ({ setProjectSelected, project }: PIProps) => {
 
   return (
     <div
-      className="w-full aspect-[3/4] relative flex flex-col px-4 py-6 border border-solid border-black border-2 hover:shadow-solid-4 hover:cursor-pointer"
+      className="w-full  relative flex flex-col px-4 py-6 border-solid border-black border-2 hover:shadow-solid-4 hover:cursor-pointer"
       onClick={() => setProjectSelected(project.projectId)}
     >
       <img
         src={project.titleImgUrl ? project.titleImgUrl : project.imgUrls[0]}
         className="w-full aspect-[4/3] bg-yellow-300 mb-4 object-cover"
       />
-      <div className="font-bold text-lg">{project.name}</div>
+      <div className="font-bold text-md">{project.name}</div>
 
       <div className="w-full">
         {project.skills.map((skill) => {
