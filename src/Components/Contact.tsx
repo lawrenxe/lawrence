@@ -64,7 +64,7 @@ const Contact = ({ setContact, message }: CProps) => {
         <Transition time={1000} delay={600} loaded={loaded}>
           <Bubble
             className="ml-5 hover:cursor-pointer hover:shadow-solid-4"
-            link="mailto: jobs.yizhou@gmail.com"
+            link="mailto:jobs.yizhou@gmail.com"
           >
             <div className="font-bold flex flex-row items-center gap-2">
               <MdEmail />

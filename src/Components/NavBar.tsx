@@ -104,7 +104,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
         </Transition>
         <Transition time={1000} delay={800} loaded={loaded}>
           <div className="flex flex-col hover:cursor-pointer">
-            <a href="mailto: jobs.yizhou@gmail.com" target="_blank">
+            <a href="mailto:jobs.yizhou@gmail.com" target="_blank">
               <div className="font-medium flex flex-row items-center gap-2">
                 <MdEmail />
                 jobs.yizhou@gmail.com
