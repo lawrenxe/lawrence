@@ -69,7 +69,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
         </Transition>
       </div>
       <div className="flex flex-col gap-y-2">
-        <Transition time={1000} delay={500} loaded={loaded}>
+        <Transition time={1000} delay={800} loaded={loaded}>
           <div className="flex flex-col hover:cursor-pointer">
             <a href="https://github.com/lawrenxe" target="_blank">
               <div className="font-medium flex flex-row items-center gap-2">
@@ -79,7 +79,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
             </a>
           </div>
         </Transition>
-        <Transition time={1000} delay={600} loaded={loaded}>
+        <Transition time={1000} delay={900} loaded={loaded}>
           <div className="flex flex-col hover:cursor-pointer">
             <a href="https://leetcode.com/lawrenxe/" target="_blank">
               <div className="font-medium flex flex-row items-center gap-2">
@@ -89,7 +89,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
             </a>
           </div>
         </Transition>
-        <Transition time={1000} delay={700} loaded={loaded}>
+        <Transition time={1000} delay={1000} loaded={loaded}>
           <div className="flex flex-col hover:cursor-pointer">
             <a
               href="https://www.linkedin.com/in/yizhou-lawrence-wang/"
@@ -102,7 +102,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
             </a>
           </div>
         </Transition>
-        <Transition time={1000} delay={800} loaded={loaded}>
+        <Transition time={1000} delay={1100} loaded={loaded}>
           <div className="flex flex-col hover:cursor-pointer">
             <a href="mailto:jobs.yizhou@gmail.com" target="_blank">
               <div className="font-medium flex flex-row items-center gap-2">
