@@ -8,7 +8,7 @@ interface EIProps {
 
 const EducationItem = ({ education }: EIProps) => {
   return (
-    <div className="flex flex-col w-full gap-2 mb-4 bg-white p-3 lg:p-5 xl:p-8 border-black border-2 shadow-solid-4">
+    <div className="flex flex-col w-full gap-2 mb-4 bg-white p-3 lg:p-5 xl:p-8 border-black border-2 shadow-solid-4 rounded-lg">
       <div className="flex flex-col">
         <div className="w-full md:flex md:flex-row items-end justify-between">
           <h1 className="text-md lg:text-lg xl:text-xl font-sans font-bold ">

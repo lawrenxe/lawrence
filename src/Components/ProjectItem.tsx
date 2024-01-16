@@ -12,7 +12,7 @@ const ProjectItem = ({ setProjectSelected, project }: PIProps) => {
 
   return (
     <div
-      className="w-full relative flex flex-col px-4 py-6 border-solid border-black border-2 hover:shadow-solid-4 hover:cursor-pointer"
+      className="bg-white  w-full relative flex flex-col px-4 py-6 lg:aspect-[2/3] border-solid border-black border-2 hover:shadow-solid-4 hover:cursor-pointer rounded-md"
       onClick={() => setProjectSelected(project.projectId)}
     >
       <img

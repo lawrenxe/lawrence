@@ -68,7 +68,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
           </NavBarItem>
         </Transition>
       </div>
-      <div className="flex flex-col gap-y-2">
+      <div className="flex flex-col gap-y-3">
         <Transition time={1000} delay={500} loaded={loaded}>
           <div className="flex flex-col hover:cursor-pointer">
             <a href="https://github.com/lawrenxe" target="_blank">

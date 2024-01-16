@@ -18,25 +18,27 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
     lawrence: "Class Lawrence",
     projects: "getProjects()",
     experience: "getExperiences()",
-    education: "getEducations()",
+    education: "getEducation()",
     contact: "void contact()",
   };
 
   return (
     <div
       className={
-        "bg-neutral-200 w-screen h-screen flex justify-center items-center"
+        "bg-green-600 w-screen h-screen flex justify-center items-center"
       }
     >
       <div
         className={
-          "bg-white w-screen h-screen flex flex-col p-10 lg:p-15 xl:p-20 items-center max-w-[1280px] max-h-[960px]  xl:border-4 xl:shadow-solid-8 xl:border-black relative "
+          "bg-amber-400 w-screen h-screen flex flex-col p-10 lg:p-15 xl:p-20 items-center max-w-[1280px] max-h-[960px]  xl:border-4 xl:shadow-solid-8 xl:border-black xl:rounded-xl relative "
         }
       >
-        <section className="h-10 font-mono font-black text-xl xl:text-3xl lg:text-2xl flex flex-row gap-4 w-full justify-between items-center">
-          <p className="">
-            {titleMap[selected as keyof typeof titleMap]}
-            {" {"}
+        <section className="h-20 font-mono font-black text-xl xl:text-3xl lg:text-2xl flex flex-row gap-4 w-full justify-between items-center">
+          <p>
+            <span className="border-solid border-black rounded-lg border-4 p-3 bg-black shadow-solid-4 text-white">
+              {titleMap[selected as keyof typeof titleMap]}
+            </span>
+            <span>{" {"}</span>
           </p>
           <section
             className="lg:hidden hover:cursor-pointer"
@@ -57,7 +59,12 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
           <section className="py-5 lg:py-8 xl:py-12 px-2 w-full h-full min-h-fit overflow-y-scroll no-scrollbar relative flex ">
             {isHamburgerClicked ? (
               <div>
-                <div className="lg:hidden h-full w-full">
+                <div
+                  className="lg:hidden h-full w-full"
+                  onClick={() => {
+                    setHamburgerClicked(false);
+                  }}
+                >
                   <NavBar selected={selected} setSelected={setSelected} />
                 </div>
                 <div className="hidden lg:block w-full h-full">{children}</div>
