@@ -1,10 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.ad9d27f1.css",
-    "main.js": "/static/js/main.f5f8db22.js",
+    "main.js": "/static/js/main.0a719bf1.js",
     "static/js/787.808227d7.chunk.js": "/static/js/787.808227d7.chunk.js",
-    "static/media/music1.png": "/static/media/music1.8b3ee24c4d180d17bdb5.png",
-    "static/media/web3.png": "/static/media/web3.825c7a5efa3aa4d2861a.png",
     "static/media/music1.gif": "/static/media/music1.fe1a62d7f52c0e845899.gif",
     "static/media/YouTube2.PNG": "/static/media/YouTube2.9a871547162697222320.PNG",
     "static/media/unimelb.png": "/static/media/unimelb.ad79a89fd6a34cd32093.png",
@@ -13,15 +11,17 @@
     "static/media/YouTube4.PNG": "/static/media/YouTube4.e5aedcdb209bb4a5dc3e.PNG",
     "static/media/Potrait.png": "/static/media/Potrait.fda0331d0d9635b61aaf.png",
     "static/media/standup2.PNG": "/static/media/standup2.36ecb675ab6f2fe1e993.PNG",
+    "static/media/music1.png": "/static/media/music1.179094b324a025f69816.png",
     "static/media/standup1.PNG": "/static/media/standup1.d2623c7ce8433209b405.PNG",
+    "static/media/web3.png": "/static/media/web3.8eab0373e65eeb025f6d.png",
     "static/media/covid1.png": "/static/media/covid1.3235d1bfa124d78695d7.png",
     "index.html": "/index.html",
     "main.ad9d27f1.css.map": "/static/css/main.ad9d27f1.css.map",
-    "main.f5f8db22.js.map": "/static/js/main.f5f8db22.js.map",
+    "main.0a719bf1.js.map": "/static/js/main.0a719bf1.js.map",
     "787.808227d7.chunk.js.map": "/static/js/787.808227d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad9d27f1.css",
-    "static/js/main.f5f8db22.js"
+    "static/js/main.0a719bf1.js"
   ]
 }
