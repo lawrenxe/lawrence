@@ -30,7 +30,7 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
     >
       <div
         className={
-          "bg-white w-screen h-screen flex flex-col p-10 items-center max-w-[1280px] max-h-[960px]  xl:border-4 xl:shadow-solid-8 xl:border-black relative"
+          "bg-white w-screen h-screen flex flex-col p-10 lg:p-15 xl:p-20 items-center max-w-[1280px] max-h-[960px]  xl:border-4 xl:shadow-solid-8 xl:border-black relative "
         }
       >
         <section className="h-10 font-mono font-black text-xl xl:text-3xl lg:text-2xl flex flex-row gap-4 w-full justify-between items-center">
