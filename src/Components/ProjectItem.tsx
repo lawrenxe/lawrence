@@ -17,7 +17,7 @@ const ProjectItem = ({ setProjectSelected, project }: PIProps) => {
     >
       <img
         src={project.titleImgUrl ? project.titleImgUrl : project.imgUrls[0]}
-        className="w-full aspect-[4/3] bg-yellow-300 mb-4 object-cover"
+        className="w-full aspect-[4/3] bg-gray-200 mb-4 object-cover"
       />
       <div className="font-bold text-md lg:text-lg ">{project.name}</div>
 
