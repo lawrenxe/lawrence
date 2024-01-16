@@ -34,7 +34,7 @@ const projects: ProjectType[] = [
       require("../assets/YouTube4.PNG"),
     ],
     description: (
-      <div className="font-normal text-sm lg:text-md xl:text-lg lg:px-10 flex flex-col gap-4">
+      <div className="font-normal text-sm lg:text-md xl:text-lg flex flex-col gap-4">
         <p>
           <span className="font-medium">YouTube History Report</span> is a
           responsive web application that reads the YouTube watch history from
@@ -72,7 +72,7 @@ const projects: ProjectType[] = [
     titleImgUrl: require("../assets/music1.png"),
     imgUrls: [require("../assets/music1.gif")],
     description: (
-      <div className="font-normal text-sm lg:text-md xl:text-lg lg:px-10 flex flex-col gap-4">
+      <div className="font-normal text-sm lg:text-md xl:text-lg flex flex-col gap-4">
         <p>
           <span className="font-medium">
             Music Psychology Multi-media Web Application
@@ -98,7 +98,7 @@ const projects: ProjectType[] = [
     imgUrls: [require("../assets/web3.png")],
     youtubeUrl: "https://www.youtube.com/embed/lr_89dHGKEU?si=WfVinmOCsk8cSsoY",
     description: (
-      <div className="font-normal text-sm lg:text-md xl:text-lg lg:px-10 flex flex-col gap-4">
+      <div className="font-normal text-sm lg:text-md xl:text-lg flex flex-col gap-4">
         <p>
           <span className="font-medium">Web3 Blackjack Casino Game</span> is a
           web application that integrate the traditional BlackJack game with
@@ -143,7 +143,7 @@ const projects: ProjectType[] = [
       require("../assets/standup2.PNG"),
     ],
     description: (
-      <div className="font-normal text-sm lg:text-md xl:text-lg lg:px-10 flex flex-col gap-4">
+      <div className="font-normal text-sm lg:text-md xl:text-lg flex flex-col gap-4">
         <p>
           <span className="font-medium">Daily StandUp Board</span> is a web
           application designed and implemented for internal use in one of my
@@ -168,7 +168,7 @@ const projects: ProjectType[] = [
     skills: ["NLP", "ML", "Python", "Pandas", "Data Analysis"],
     imgUrls: [require("../assets/covid1.png")],
     description: (
-      <div className="font-normal text-sm lg:text-md xl:text-lg lg:px-10 flex flex-col gap-4">
+      <div className="font-normal text-sm lg:text-md xl:text-lg flex flex-col gap-4">
         <p>
           <span className="font-medium">
             COVID-related Tweets Rumour Analysis

@@ -20,7 +20,7 @@ const ProjectCard = ({ project }: PCProps) => {
   const gridColumn = project.imgUrls.length;
 
   return (
-    <div className="flex flex-col gap-y-8 w-full h-full overflow-y-auto no-scrollbar">
+    <div className="flex flex-col gap-y-8 w-full h-full overflow-y-auto no-scrollbar lg:px-10">
       <div className="flex flex-col gap-y-1 w-full">
         <div className="flex flex-row items-center gap-x-3">
           <h1 className="text-xl lg:text-2xl xl:text-3xl font-bold">
@@ -45,6 +45,7 @@ const ProjectCard = ({ project }: PCProps) => {
           })}
         </div>
       </div>
+
       {project.youtubeUrl && (
         <iframe
           className="aspect-[16/9]"
