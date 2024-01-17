@@ -51,10 +51,6 @@ function App() {
     }
   }, [isPopup]);
 
-  useEffect(() => {
-    console.log(message);
-  }, [message]);
-
   return (
     <div className="h-screen w-screen flex justify-center items-center relative bg-amber-400 lg:bg-green-600">
       <div className={`w-full h-full ${isPopup ? "blur-xl" : ""}`}>

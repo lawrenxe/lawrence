@@ -29,21 +29,21 @@ const ExperienceItem = ({ experience }: EIProps) => {
       </div>
 
       <div className="flex flex-col text-xs lg:text-sm xl:text-md">
-        <p className="font-medium">
-          {experience.workItems.map((item) => {
+        <div className="font-medium">
+          {experience.workItems.map((item, index) => {
             return (
-              <div className="flex flex-row gap-1">
+              <span key={index} className="flex flex-row gap-1">
                 {" "}
                 <p className="w-fit">·</p> <p>{item}</p>{" "}
-              </div>
+              </span>
             );
           })}
-        </p>
+        </div>
       </div>
 
       <div className="">
-        {experience.skills.map((skill) => {
-          return <SkillTag>{skill}</SkillTag>;
+        {experience.skills.map((skill, index) => {
+          return <SkillTag key={index}>{skill}</SkillTag>;
         })}
       </div>
     </div>

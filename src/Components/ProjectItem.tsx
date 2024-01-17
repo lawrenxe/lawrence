@@ -22,8 +22,8 @@ const ProjectItem = ({ setProjectSelected, project }: PIProps) => {
       <div className="font-bold text-md lg:text-lg ">{project.name}</div>
 
       <div className="w-full">
-        {project.skills.map((skill) => {
-          return <SkillTag>{skill}</SkillTag>;
+        {project.skills.map((skill, index) => {
+          return <SkillTag key={index}>{skill}</SkillTag>;
         })}
       </div>
     </div>

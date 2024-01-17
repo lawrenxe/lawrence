@@ -16,7 +16,12 @@ const Experience = () => {
     <div className="flex flex-col">
       {experiences.map((experience, index) => {
         return (
-          <Transition time={1000} delay={150 * index} loaded={loaded}>
+          <Transition
+            key={index}
+            time={1000}
+            delay={150 * index}
+            loaded={loaded}
+          >
             <ExperienceItem experience={experience} />
           </Transition>
         );

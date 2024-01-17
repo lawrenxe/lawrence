@@ -1,6 +1,7 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Rainbow from "../assets/rainbow.png";
 
 interface LProps {
   children: ReactNode;
@@ -34,12 +35,16 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
         }
       >
         <section className="h-20 font-mono font-black text-xl xl:text-3xl lg:text-2xl flex flex-row gap-4 w-full justify-between items-center">
-          <p>
-            <span className="border-solid border-black rounded-lg border-4 p-3 bg-black shadow-solid-4 text-white">
+          <div className="flex flex-row items-center gap-40">
+            <div className="border-solid border-black rounded-lg border-4 p-3 bg-black shadow-solid-4 text-white flex flex-row items-center gap-x-3">
               {titleMap[selected as keyof typeof titleMap]}
-            </span>
+              {selected == "lawrence" && (
+                <img src={Rainbow} className="w-6 h-6" alt="rainbow" />
+              )}
+            </div>
+
             <span>{" {"}</span>
-          </p>
+          </div>
           <section
             className="lg:hidden hover:cursor-pointer"
             onClick={() => {

@@ -21,7 +21,7 @@ const ContactForm = ({ setMessage, setContact }: CFProps) => {
   const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     ? process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     : "";
-  console.log(serviceId);
+
   const { register, handleSubmit } = useForm<Message>();
   const [isLoading, setLoading] = useState<boolean>(false);
 
@@ -32,7 +32,6 @@ const ContactForm = ({ setMessage, setContact }: CFProps) => {
       .sendForm(serviceId, templateId, e?.target, publicKey)
       .then(() => {
         setLoading(false);
-        console.log("email sent successfully");
         if (setMessage) setMessage(data);
         if (setContact) setContact(false);
       })
