@@ -56,7 +56,7 @@ function App() {
   }, [message]);
 
   return (
-    <div className="h-screen w-screen flex justify-center items-center relative">
+    <div className="h-screen w-screen flex justify-center items-center relative bg-amber-400 lg:bg-green-600">
       <div className={`w-full h-full ${isPopup ? "blur-xl" : ""}`}>
         <Layout setSelected={setSelected} selected={selected}>
           {selected === "lawrence" && <Lawrence />}

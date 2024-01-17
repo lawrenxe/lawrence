@@ -25,12 +25,12 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
   return (
     <div
       className={
-        "bg-green-600 w-screen h-screen flex justify-center items-center overflow-hidden"
+        "bg-amber-400 lg:bg-green-600 w-screen h-screen flex justify-center items-center overflow-hidden"
       }
     >
       <div
         className={
-          "bg-amber-400 w-screen h-screen flex flex-col p-10 lg:p-15 xl:p-20 items-center max-w-[1280px] max-h-[960px]  xl:border-4 xl:shadow-solid-8 xl:border-black xl:rounded-xl relative overflow-hidden"
+          "bg-amber-400 w-screen h-screen flex flex-col p-10 lg:p-15  items-center max-w-[1280px] max-h-[960px]  lg:border-4 lg:shadow-solid-8 lg:border-black lg:rounded-xl relative overflow-hidden"
         }
       >
         <section className="h-20 font-mono font-black text-xl xl:text-3xl lg:text-2xl flex flex-row gap-4 w-full justify-between items-center">
