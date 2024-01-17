@@ -34,8 +34,8 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
           "bg-amber-400 w-screen h-screen flex flex-col p-10 lg:p-15  items-center max-w-[1280px] max-h-[960px]  lg:border-4 lg:shadow-solid-8 lg:border-black lg:rounded-xl relative overflow-hidden"
         }
       >
-        <section className="h-20 font-mono font-black text-xl xl:text-3xl lg:text-2xl flex flex-row gap-4 w-full justify-between items-center">
-          <div className="flex flex-row items-center gap-40">
+        <section className="h-20 font-mono font-black text-xl xl:text-3xl lg:text-2xl flex flex-row gap-2 w-full justify-between items-center">
+          <div className="flex flex-row items-center gap-6">
             <div className="border-solid border-black rounded-lg border-4 p-3 bg-black shadow-solid-4 text-white flex flex-row items-center gap-x-3">
               {titleMap[selected as keyof typeof titleMap]}
               {selected == "lawrence" && (
@@ -43,7 +43,7 @@ const Layout = ({ children, setSelected, selected }: LProps) => {
               )}
             </div>
 
-            <span>{" {"}</span>
+            <span>{"{"}</span>
           </div>
           <section
             className="lg:hidden hover:cursor-pointer"
