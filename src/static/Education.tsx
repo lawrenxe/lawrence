@@ -14,7 +14,7 @@ const educations: EducationType[] = [
     school: "University of Melbourne",
     period: "Mar. 2021 - Mar. 2023",
     course: "Master of Information Technology",
-    gpa: "81.2 (High Distinction)",
+    gpa: "High Distinction",
     achieve:
       "Awarded 2022 Melbourne Graduate Scholarship(1st Class) for academic performance.",
     subjects:
@@ -25,7 +25,7 @@ const educations: EducationType[] = [
     school: "University of Melbourne",
     period: "Mar. 2017 - Dec. 2019",
     course: "Bachelor of Commerce",
-    gpa: "76.958 (Second Class Honours, Division A)",
+    gpa: "Second Class Honours, Division A",
     subjects:
       "Foundation of FinTech · Python · Financial Accounting · Investment...",
   },
