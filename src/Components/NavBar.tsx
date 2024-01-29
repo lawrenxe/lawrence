@@ -55,7 +55,7 @@ const NavBar = ({ setSelected, selected }: NBProps) => {
             setSelected={setSelected}
             selected={selected}
           >
-            .getEduaction()
+            .getEducation()
           </NavBarItem>
         </Transition>
         <Transition time={1000} delay={400} loaded={loaded}>
