@@ -27,8 +27,9 @@ const Lawrence = () => {
         </Transition>
         <Transition time={1000} delay={200} loaded={loaded}>
           <Bubble>
-            currently seeking employment as a{" "}
-            <span className="text-blue-700">Front-end developer</span>.
+            currently seeking employment in the{" "}
+            <span className="text-blue-700">Tech Field</span>
+            to sharpen my skills.
           </Bubble>
         </Transition>
         <Transition time={1000} delay={300} loaded={loaded}>
